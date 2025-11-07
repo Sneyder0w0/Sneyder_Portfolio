@@ -20,15 +20,15 @@ export const Banner = () => {
             {/* Barra de skills */}
             <div className="skills">
                 <div className="skill">
-                    <img src="" alt="Python" className="skill-iconos" />
+                    <img src="/Python-logo.png" alt="Python" className="skill-iconos" />
                     <p>Python</p>
                 </div>
                 <div className="skill">
-                    <img src="" alt="Excel" className="skill-iconos" />
+                    <img src="/Excel-logo.png" alt="Excel" className="skill-iconos" />
                     <p>Excel</p>
                 </div>
                 <div className="skill">
-                    <img src="" alt="Power BI" className="skill-iconos" />
+                    <img src="/PBI-logo.png" alt="Power BI" className="skill-iconos" />
                     <p>Power BI</p>
                 </div>
             </div>
