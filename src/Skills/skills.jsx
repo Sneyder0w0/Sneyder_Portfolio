@@ -26,7 +26,6 @@ export const Skills = () => {
         </button>
       </div>
 
-      {/* --- Skills Dropdown --- */}
       {openDropdown === "skills" && (
         <div className="dropdown-card">
           <h2>Skills</h2>
@@ -55,7 +54,6 @@ export const Skills = () => {
         </div>
       )}
 
-      {/* --- Interest Dropdown --- */}
       {openDropdown === "interest" && (
         <div className="dropdown-card">
           <h2>Interest</h2>

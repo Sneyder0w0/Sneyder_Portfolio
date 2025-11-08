@@ -18,7 +18,6 @@ export const Banner = () => {
                     <a className="nombre">Sneyder</a>
                     <a className="apellido">Orellana</a>
                 </h1>
-                {/* Barra de skills */}
                 <div className="skills">
                     <div className="skill">
                         <img src="/Python-logo.png" alt="Python" className="skill-iconos" />
