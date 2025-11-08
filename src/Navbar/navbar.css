@@ -1,53 +1,80 @@
 .navbar {
-    width: 100%;
-    display: flex;
-    background-color: #102544;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 40px;
-    position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #102544;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 15px 0;
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 60px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-link1 {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-.nav-link2 {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-.nav-link3 {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-.nav-link4 {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.nav-link1:hover {
-    color: #cccccc;
+.nav-links a:hover {
+  color: #cccccc;
 }
-.nav-link2:hover {
-    color: #cccccc;
+
+/* --- Responsive --- */
+.menu-toggle {
+  display: none;
 }
-.nav-link3:hover {
-    color: #cccccc;
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
 }
-.nav-link4:hover {
-    color: #cccccc;
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #0b1d35;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    transform: translateY(-200%);
+    transition: transform 0.4s ease;
+  }
+
+  .menu-toggle:checked + .hamburger + .nav-links {
+    transform: translateY(0);
+  }
 }

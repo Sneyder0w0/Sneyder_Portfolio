@@ -1,0 +1,43 @@
+.about {
+  background-color: #0b1d35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px; /* ⬅️ Menos espacio interno */
+  color: white;
+  text-align: center;
+  scroll-margin-top: 80px; /* para navegación suave si usas navbar fijo */
+}
+
+.about-container {
+  max-width: 800px;
+}
+
+.about-title {
+  font-size: 2.3rem;
+  margin-bottom: 15px; /* ⬅️ Menor espacio entre título y texto */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 10px; /* ⬅️ Menos espacio entre párrafos */
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 15px; /* ⬅️ menos espacio en móviles */
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
